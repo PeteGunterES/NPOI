@@ -18,6 +18,7 @@
 using System;
 using System.IO;
 using System.Text;
+using NPOI.SS.Formula.Eval;
 using NPOI.Util;
 
 namespace NPOI.HPSF
@@ -57,29 +58,33 @@ namespace NPOI.HPSF
 
         public String GetJavaValue(int codepage)
         {
-            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-            String result;
-            if (codepage == -1)
-                result = Encoding.UTF8.GetString(_value);
-            else
-                result = Encoding.GetEncoding(codepage).GetString(_value);
-            int terminator = result.IndexOf('\0');
-            if (terminator == -1)
-            {
-                //logger.log(
-                //        POILogger.WARN,
-                //        "String terminator (\\0) for CodePageString property value not found."
-                //                + "Continue without trimming and hope for the best." );
-                return result;
-            }
-            if (terminator != result.Length - 1)
-            {
-                //logger.log(
-                //        POILogger.WARN,
-                //        "String terminator (\\0) for CodePageString property value occured before the end of string. "
-                //                + "Trimming and hope for the best." );
-            }
-            return result.Substring(0, terminator);
+            // ELECTRIC SQUARE BEGIN
+            // Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            // String result;
+            // if (codepage == -1)
+            //     result = Encoding.UTF8.GetString(_value);
+            // else
+            //     result = Encoding.GetEncoding(codepage).GetString(_value);
+            // int terminator = result.IndexOf('\0');
+            // if (terminator == -1)
+            // {
+            //     //logger.log(
+            //     //        POILogger.WARN,
+            //     //        "String terminator (\\0) for CodePageString property value not found."
+            //     //                + "Continue without trimming and hope for the best." );
+            //     return result;
+            // }
+            // if (terminator != result.Length - 1)
+            // {
+            //     //logger.log(
+            //     //        POILogger.WARN,
+            //     //        "String terminator (\\0) for CodePageString property value occured before the end of string. "
+            //     //                + "Trimming and hope for the best." );
+            // }
+            // return result.Substring(0, terminator);
+
+            throw new NotImplementedException();
+            // ELECTRIC SQUARE END
         }
 
         public int Size

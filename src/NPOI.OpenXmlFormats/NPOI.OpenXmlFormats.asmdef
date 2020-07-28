@@ -1,0 +1,17 @@
+{
+    "name": "NPOI.OpenXmlFormats",
+    "references": [
+        "GUID:7528b94200c2a7b43b60ab656d5fa99c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

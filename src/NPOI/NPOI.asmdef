@@ -1,0 +1,15 @@
+{
+    "name": "NPOI",
+    "references": [
+        "GUID:4fe842e4b64421940a6ccca96cabfd0e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

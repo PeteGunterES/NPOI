@@ -1,0 +1,16 @@
+{
+    "name": "NPOI.OpenXml4Net",
+    "references": [
+        "ICSharpCode.SharpZipLib",
+        "NPOI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
