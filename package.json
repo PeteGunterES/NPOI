@@ -1,9 +1,9 @@
 {
   "name": "com.electricsquare.npoi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "NPOI",
   "description": "Fork of NPOI for distribution as a Unity package",
   "dependencies": {
-    "com.electricsquare.sharpziplib": "1.0.0"
+    "com.electricsquare.sharpziplib": "1.0.1"
  }
 }

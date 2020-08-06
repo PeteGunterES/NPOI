@@ -67,7 +67,8 @@ artifacts/
 *_p.c
 *_i.h
 *.ilk
-*.meta
+# ElectricSquare: Allow .meta for Unity
+# *.meta
 *.obj
 *.pch
 *.pdb
