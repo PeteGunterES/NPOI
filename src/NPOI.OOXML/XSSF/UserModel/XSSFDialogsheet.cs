@@ -694,7 +694,8 @@ namespace NPOI.XSSF.UserModel
             get { throw new System.NotImplementedException(); }
         }
 
-        bool IsRightToLeft
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        new bool IsRightToLeft
         {
             get
             {

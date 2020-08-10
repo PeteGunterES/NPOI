@@ -27,7 +27,9 @@ namespace NPOI.HSSF.Model
     /// An abstract shape Is the lowlevel model for a shape.
     /// @author Glen Stampoultzis (glens at apache.org)
     /// </summary>
-    [Obsolete]
+    // ElectricSquare: Causes compile error in Unity
+    //[Obsolete]
+    // ElectricSquare
     public abstract class AbstractShape
     {
         /// <summary>

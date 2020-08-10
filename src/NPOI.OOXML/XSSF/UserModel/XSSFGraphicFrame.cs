@@ -37,8 +37,10 @@ namespace NPOI.XSSF.UserModel
         private static CT_GraphicalObjectFrame prototype = null;
 
         private CT_GraphicalObjectFrame graphicFrame;
-        private XSSFDrawing drawing;
-        private XSSFClientAnchor anchor;
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        private new XSSFDrawing drawing;
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        private new XSSFClientAnchor anchor;
 
         /**
          * Construct a new XSSFGraphicFrame object.

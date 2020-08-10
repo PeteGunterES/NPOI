@@ -172,7 +172,7 @@ namespace NPOI.XSSF.UserModel
          * <code>resize(1.0,1.0)</code> keeps the original size,<br/>
          * <code>resize(0.5,0.5)</code> resize to 50% of the original,<br/>
          * <code>resize(2.0,2.0)</code> resizes to 200% of the original.<br/>
-         * <code>resize({@link Double#MAX_VALUE},{@link Double#MAX_VALUE})</code> resizes to the dimension of the embedded image. 
+         * <code>resize({@link Double#MAX_VALUE},{@link Double#MAX_VALUE})</code> resizes to the dimension of the embedded image.
          * </p>
          *
          * @param scaleX the amount by which the image width is multiplied relative to the original width,
@@ -279,12 +279,14 @@ namespace NPOI.XSSF.UserModel
 
         #region IShape Members
 
-        public int CountOfAllChildren
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new int CountOfAllChildren
         {
             get { throw new NotImplementedException(); }
         }
 
-        public int FillColor
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new int FillColor
         {
             get
             {
@@ -296,7 +298,8 @@ namespace NPOI.XSSF.UserModel
             }
         }
 
-        public LineStyle LineStyle
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new LineStyle LineStyle
         {
             get
             {
@@ -308,12 +311,14 @@ namespace NPOI.XSSF.UserModel
             }
         }
 
-        public int LineStyleColor
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new int LineStyleColor
         {
             get { throw new NotImplementedException(); }
         }
 
-        public int LineWidth
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new int LineWidth
         {
             get
             {
@@ -325,7 +330,8 @@ namespace NPOI.XSSF.UserModel
             }
         }
 
-        public void SetLineStyleColor(int lineStyleColor)
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        new public void SetLineStyleColor(int lineStyleColor)
         {
             throw new NotImplementedException();
         }

@@ -41,7 +41,9 @@ namespace NPOI.Util
         * value and correction factor is applied in accessor method.
         */
 #if !HIDE_UNREACHABLE_CODE
-        [Obsolete]
+        // ElectricSquare: Causes compile error in Unity
+        // [Obsolete]
+        // ElectricSquare
 #endif
         private int bitCount;
 
@@ -55,7 +57,10 @@ namespace NPOI.Util
          * value and correction factor is applied in accessor method.
          */
 #if !HIDE_UNREACHABLE_CODE
-        [Obsolete]
+
+        // ElectricSquare: Causes compile error in Unity
+        // [Obsolete]
+        // ElectricSquare
 #endif
         private int bitLength;
 
@@ -80,7 +85,9 @@ namespace NPOI.Util
          * value and correction factor is applied in accessor method.
          */
 #if !HIDE_UNREACHABLE_CODE
-        [Obsolete]
+        // ElectricSquare: Causes compile error in Unity
+        // [Obsolete]
+        // ElectricSquare
 #endif
         private int firstNonzeroIntNum;
 

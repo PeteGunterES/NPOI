@@ -120,7 +120,7 @@ namespace NPOI.SS.UserModel
                     return wb;
                 }
             }
-            catch (OfficeXmlFileException e)
+            catch (OfficeXmlFileException) // ElectricSquare:  The variable 'e' is declared but never used
             {
                 // opening as .xls failed => try opening as .xlsx
                 OPCPackage pkg = OPCPackage.Open(file);

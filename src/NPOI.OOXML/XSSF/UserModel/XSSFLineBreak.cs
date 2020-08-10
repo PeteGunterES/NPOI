@@ -33,7 +33,8 @@ namespace NPOI.XSSF.UserModel
         }
 
 
-        protected CT_TextCharacterProperties GetRPr()
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        protected new CT_TextCharacterProperties GetRPr()
         {
             return _brProps;
         }

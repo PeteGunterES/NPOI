@@ -28,7 +28,9 @@ namespace NPOI.HSSF.Model
     /// and lowlevel records for an oval.
     /// @author Glen Stampoultzis (glens at apache.org)
     /// </summary>
-    [Obsolete]
+    // ElectricSquare: Causes compile error in Unity
+    // [Obsolete]
+    // ElectricSquare
     public class TextboxShape : AbstractShape
     {
         private EscherContainerRecord spContainer;

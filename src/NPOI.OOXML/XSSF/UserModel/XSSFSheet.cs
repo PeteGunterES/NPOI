@@ -1567,7 +1567,9 @@ namespace NPOI.XSSF.UserModel
 
 
         //YK: GetXYZArray() array accessors are deprecated in xmlbeans with JDK 1.5 support
-        [Obsolete]
+        // ElectricSquare: Causes compile error in Unity
+        // [Obsolete]
+        // ElectricSquare
         private short GetMaxOutlineLevelCols()
         {
             CT_Cols ctCols = worksheet.GetColsArray(0);
@@ -3174,7 +3176,7 @@ namespace NPOI.XSSF.UserModel
                     sheetComments = (CommentsTable)CreateRelationship(
                           XSSFRelation.SHEET_COMMENTS, XSSFFactory.GetInstance(), (int)sheet.sheetId);
                 }
-                catch (PartAlreadyExistsException e)
+                catch (PartAlreadyExistsException) // ElectricSquare:  The variable 'e' is declared but never used
                 {
                     // Technically a sheet doesn't need the same number as
                     //  it's comments, and clearly someone has already pinched

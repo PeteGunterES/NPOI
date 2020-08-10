@@ -20,7 +20,8 @@ namespace NPOI.XSSF.Streaming.Values
 {
     public abstract class StringValue : Value
     {
-        public CellType GetType()
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new CellType GetType()
         {
             return CellType.String;
         }

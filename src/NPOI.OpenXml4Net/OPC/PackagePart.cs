@@ -503,7 +503,10 @@ namespace NPOI.OpenXml4Net.OPC
                 {
                     target = PackagingUriHelper.ParseUri(t.Substring(0, t.IndexOf('#')), UriKind.Absolute);
                 }
-                catch (UriFormatException e)
+                // ElectricSquare: The value e is declared but never used
+                // catch (InvalidFormatException e) { }
+                catch (InvalidFormatException) { }
+                // ElectricSquare
                 {
                     throw new InvalidFormatException("Invalid target URI: " + t);
                 }

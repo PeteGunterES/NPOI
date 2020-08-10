@@ -117,6 +117,23 @@ namespace NPOI.XSSF.UserModel
 
         }
 
+        // ElectricSquare: 'XSSFClientAnchor' overrides Object.Equals(object o) but does not override Object.GetHashCode()
+        protected bool Equals(XSSFClientAnchor other)
+        {
+            return anchorType == other.anchorType && Equals(cell1, other.cell1) && Equals(cell2, other.cell2);
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int hashCode = anchorType;
+                hashCode = (hashCode * 397) ^ (cell1 != null ? cell1.GetHashCode() : 0);
+                hashCode = (hashCode * 397) ^ (cell2 != null ? cell2.GetHashCode() : 0);
+                return hashCode;
+            }
+        }
+        // ElectricSquare
 
         public override String ToString()
         {

@@ -41,7 +41,10 @@ namespace NPOI.OpenXml4Net.OPC
             {
                 this.contentTypeManager = new ZipContentTypeManager(null, this);
             }
-            catch (InvalidFormatException e) { }
+            // ElectricSquare: The value e is declared but never used
+            // catch (InvalidFormatException e) { }
+            catch (InvalidFormatException) { }
+            // ElectricSquare
         }
 
         /**

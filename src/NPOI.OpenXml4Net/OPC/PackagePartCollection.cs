@@ -12,8 +12,9 @@ namespace NPOI.OpenXml4Net.OPC
      */
     public class PackagePartCollection : SortedList<PackagePartName, PackagePart>
     {
-
-        private static long serialVersionUID = 2515031135957635515L;
+        // ElectricSquare: The field 'PackagePartCollection.serialVersionUID' is assigned but its value is never used
+        // private static long serialVersionUID = 2515031135957635515L;
+        // ElectricSquare
 
         /**
          * Arraylist use to store this collection part names as string for rule

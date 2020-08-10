@@ -21,7 +21,8 @@ namespace NPOI.XSSF.Streaming.Values
     public class ErrorValue : Value
     {
         public byte Value;
-        public CellType GetType()
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new CellType GetType()
         {
             return CellType.Error;
         }

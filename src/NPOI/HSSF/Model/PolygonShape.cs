@@ -25,7 +25,9 @@ namespace NPOI.HSSF.Model
     using NPOI.DDF;
     using NPOI.Util;
 
-    [Obsolete]
+    // ElectricSquare: Causes compile error in Unity
+    // [Obsolete]
+    // ElectricSquare
     public class PolygonShape: AbstractShape
     {
         public const short OBJECT_TYPE_MICROSOFT_OFFICE_DRAWING = 30;

@@ -59,7 +59,8 @@ namespace NPOI.XSSF.Streaming
             return new SXSSFEvaluationCell((SXSSFCell)cell);
         }
 
-        public SXSSFCell EvaluateInCell(ICell cell)
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new SXSSFCell EvaluateInCell(ICell cell)
         {
             return (SXSSFCell)base.EvaluateInCell(cell);
         }
@@ -103,7 +104,8 @@ namespace NPOI.XSSF.Streaming
             }
         }
 
-        public void EvaluateAll()
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new void EvaluateAll()
         {
             // Have the evaluation done, with exceptions
             EvaluateAllFormulaCells((SXSSFWorkbook)wb, false);

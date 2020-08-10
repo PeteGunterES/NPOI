@@ -23,7 +23,9 @@ namespace NPOI.HSSF.Model
     using NPOI.DDF;
     using NPOI.HSSF.UserModel;
 
-    [Obsolete]
+    // ElectricSquare: Causes compile error in Unity
+    // [Obsolete]
+    // ElectricSquare
     public class SimpleFilledShape: AbstractShape
     {
         private EscherContainerRecord spContainer;

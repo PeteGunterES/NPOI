@@ -27,6 +27,8 @@ namespace NPOI.XSSF.Streaming.Properties
         {
             _value = value;
         }
-        public abstract int GetType();
+
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new abstract int GetType();
     }
 }

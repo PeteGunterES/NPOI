@@ -512,7 +512,10 @@ namespace NPOI.Util
                 
                 int msCodepoint = char.ConvertToUtf32(string1, offset);//codePointAt(stringChars, offset, string1.Length);
                 int uniCodepoint = msCodepointToUnicode[(msCodepoint)];
-                sb.Append(Char.ConvertFromUtf32(uniCodepoint == null ? msCodepoint : uniCodepoint));
+                // ElectricSquare: The result of the expression is always 'false' since a value of type 'int' is never equal to 'null' of type 'int?'
+                //sb.Append(Char.ConvertFromUtf32(uniCodepoint == null ? msCodepoint : uniCodepoint));
+                sb.Append(Char.ConvertFromUtf32(uniCodepoint == 0 ? msCodepoint : uniCodepoint));
+                // ElectricSquare
                 offset += CharCount(msCodepoint);
             }
 

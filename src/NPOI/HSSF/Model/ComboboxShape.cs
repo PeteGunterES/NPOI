@@ -6,7 +6,9 @@
     using NPOI.HSSF.Record;
     using NPOI.SS.UserModel;
 
-    [Obsolete]
+    // ElectricSquare: Causes compile error in Unity
+    // [Obsolete]
+    // ElectricSquare
     public class ComboboxShape:AbstractShape
     {
         private EscherContainerRecord spContainer;

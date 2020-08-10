@@ -36,7 +36,7 @@ namespace NPOI.XWPF.UserModel
         protected List<XWPFNum> nums = new List<XWPFNum>();
 
         private CT_Numbering ctNumbering;
-        bool isNew;
+        //bool isNew; //ElectricSquare: The field 'XWPFNumbering.isNew' is assigned but its value is never used
 
         /**
          *create a new styles object with an existing document 
@@ -44,7 +44,7 @@ namespace NPOI.XWPF.UserModel
         public XWPFNumbering(PackagePart part, PackageRelationship rel)
             : base(part, rel)
         {
-            isNew = true;
+            //isNew = true; //ElectricSquare: The field 'XWPFNumbering.isNew' is assigned but its value is never used
         }
 
         /**
@@ -54,7 +54,7 @@ namespace NPOI.XWPF.UserModel
         {
             abstractNums = new List<XWPFAbstractNum>();
             nums = new List<XWPFNum>();
-            isNew = true;
+            //isNew = true; //ElectricSquare: The field 'XWPFNumbering.isNew' is assigned but its value is never used
         }
 
         /**
@@ -76,7 +76,7 @@ namespace NPOI.XWPF.UserModel
                 foreach(CT_AbstractNum ctAbstractNum in ctNumbering.GetAbstractNumList()){
                     abstractNums.Add(new XWPFAbstractNum(ctAbstractNum, this));
                 }
-                isNew = false;
+                //isNew = false; //ElectricSquare: The field 'XWPFNumbering.isNew' is assigned but its value is never used
             } catch (Exception e) {
                 throw new POIXMLException(e);
             }

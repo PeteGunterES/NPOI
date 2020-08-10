@@ -204,7 +204,7 @@ namespace NPOI.XSSF.Streaming
             {
                 sxSheet._writer.Close();
             }
-            catch (IOException e)
+            catch (IOException) // ElectricSquare:  The variable 'e' is declared but never used
             {
                 // ignore exception here
             }

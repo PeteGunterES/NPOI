@@ -94,7 +94,9 @@ namespace NPOI.POIFS.FileSystem
          *            is a list of Strings specifying what nodes NOT to copy
          * @deprecated use {@link FilteringDirectoryNode} instead
          */
-        [Obsolete]
+        // ElectricSquare: Causes compile error in Unity
+        // [Obsolete]
+        // ElectricSquare
         public static void CopyNodes(DirectoryEntry sourceRoot,
                 DirectoryEntry targetRoot, List<String> excepts)
         {

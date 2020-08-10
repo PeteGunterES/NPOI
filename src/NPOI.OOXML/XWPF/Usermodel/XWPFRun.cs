@@ -409,7 +409,8 @@ namespace NPOI.XWPF.UserModel
             get
             {
                 CT_RPr pr = run.rPr;
-                return (pr != null && pr.IsSetU() && pr.u.val != null) ?
+                // ElectricSquare: The result of the expression is always 'true' since a value of type 'ST_Underline' is never equal to 'null' of type 'ST_Underline?'
+                return (pr != null && pr.IsSetU() /*&& pr.u.val != null*/) ?
                     EnumConverter.ValueOf<UnderlinePatterns, ST_Underline>(pr.u.val) : UnderlinePatterns.None;
             }
         }

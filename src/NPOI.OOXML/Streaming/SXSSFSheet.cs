@@ -960,7 +960,7 @@ namespace NPOI.XSSF.Streaming
         {
 
             int firstRowNum = _rows.FirstOrDefault().Key;
-            if (firstRowNum != null)
+            if (firstRowNum != 0) // ElectricSquare: The result of the expression is always 'true' since a value of type 'int' is never equal to 'null' of type 'int?'
             {
                 int rowIndex = firstRowNum;
                 SXSSFRow row = _rows[firstRowNum];

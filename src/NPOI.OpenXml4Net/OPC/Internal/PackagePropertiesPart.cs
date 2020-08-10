@@ -17,7 +17,9 @@ namespace NPOI.OpenXml4Net.OPC.Internal
  */
 public class PackagePropertiesPart:PackagePart,PackageProperties 
 {
-    static String NAMESPACE_DC = "http://purl.org/dc/elements/1.1/";
+	// ElectricSquare: The field 'PackagePropertiesPart.NAMESPACE_DC' is assigned but its value is never used
+    // static String NAMESPACE_DC = "http://purl.org/dc/elements/1.1/";
+    // ElectricSquare
 
 	public static String NAMESPACE_DC_URI = "http://purl.org/dc/elements/1.1/";
 

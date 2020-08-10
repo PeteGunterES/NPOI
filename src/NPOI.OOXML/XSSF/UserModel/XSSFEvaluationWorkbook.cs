@@ -96,7 +96,7 @@ namespace NPOI.XSSF.UserModel
             {
                 return Int32.Parse(bookName);
             }
-            catch (FormatException e) { }
+            catch (FormatException ) { } // ElectricSquare:  The variable 'e' is declared but never used
 
             // Look up an External Link Table for this name
             List<ExternalLinksTable> tables = _uBook.ExternalLinksTable;

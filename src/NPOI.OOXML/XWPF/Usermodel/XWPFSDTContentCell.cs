@@ -167,7 +167,8 @@ namespace NPOI.XWPF.UserModel
             //{
             //    return true;
             //}
-            return false;
+            // ElectricSquare: Unreachable code detected
+            // return false;
         }
 
 

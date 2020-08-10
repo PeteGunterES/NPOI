@@ -29,7 +29,9 @@ namespace NPOI.HSSF.Model
     /// to low-level records.
     /// @author Yegor Kozlov
     /// </summary>
-    [Obsolete]
+    // ElectricSquare: Causes compile error in Unity
+    // [Obsolete]
+    // ElectricSquare
     public class CommentShape : TextboxShape
     {
 

@@ -21,7 +21,8 @@ namespace NPOI.XSSF.Streaming.Values
     public class BooleanValue : Value
     {
         public bool Value { get; set; }
-        public CellType GetType()
+        // ElectricSquare: 'new' added to decalare intention to hide base implementation
+        public new CellType GetType()
         {
             return CellType.Boolean;
         }

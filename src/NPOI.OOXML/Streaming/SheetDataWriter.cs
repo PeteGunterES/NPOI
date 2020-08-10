@@ -116,7 +116,7 @@ namespace NPOI.XSSF.Streaming
             {
                 OutputStream.Flush();
             }
-            catch (Exception e)
+            catch (Exception) // ElectricSquare:  The variable 'e' is declared but never used
             {
 
             }
@@ -124,7 +124,7 @@ namespace NPOI.XSSF.Streaming
             {
                 OutputStream.Close();
             }
-            catch (Exception e)
+            catch (Exception) // ElectricSquare:  The variable 'e' is declared but never used
             {
 
             }
@@ -165,15 +165,17 @@ namespace NPOI.XSSF.Streaming
         }
 
 
-
-        protected void Finalize()
-        {
-            TemporaryFileInfo.Delete();
-            if (File.Exists(TemporaryFileInfo.FullName))
-            {
-                logger.Log(POILogger.ERROR, "Can't delete temporary encryption file: " + TemporaryFileInfo);
-            }
-        }
+        // ElectricSquare: Introducing a 'Finalize' method can interfere with destructor invocation. Did you intend to declare a destructor?
+        // ElectricSquare: Method 'Finalize' is never used.
+        // protected void Finalize()
+        // {
+        //     TemporaryFileInfo.Delete();
+        //     if (File.Exists(TemporaryFileInfo.FullName))
+        //     {
+        //         logger.Log(POILogger.ERROR, "Can't delete temporary encryption file: " + TemporaryFileInfo);
+        //     }
+        // }
+        // ElectricSquare
 
         /**
          * Write a row to the file
